@@ -23,7 +23,7 @@ The system provides:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/intelligent-training-data.git
+git clone https://github.com/YifeiSheng/intelligent-training-data.git
 
 # Install dependencies
 pip install -r requirements.txt

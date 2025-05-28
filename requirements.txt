@@ -1,0 +1,42 @@
+# Machine Learning & Deep Learning
+torch>=2.0.0
+transformers>=4.30.0
+accelerate>=0.21.0
+peft>=0.5.0
+
+# NLP Libraries
+spacy>=3.6.0
+nltk>=3.8.1
+sentence-transformers>=2.2.2
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+datasets>=2.14.0
+pyarrow>=12.0.0
+tqdm>=4.66.0
+
+# Quality Assurance & Evaluation
+evaluate>=0.4.0
+rouge-score>=0.1.2
+sacrebleu>=2.3.1
+bert-score>=0.3.13
+
+# Logging & Tracing
+wandb>=0.15.0
+mlflow>=2.7.0
+
+# Utilities
+pyyaml>=6.0
+requests>=2.31.0
+jsonlines>=3.1.0
+huggingface-hub>=0.17.0
+
+# Multilingual Support
+langdetect>=1.0.9
+jieba>=0.42.1  # For Chinese text processing
+
+# Development
+pytest>=7.4.0
+black>=23.7.0
+isort>=5.12.0
