@@ -28,12 +28,8 @@ git clone https://github.com/YifeiSheng/intelligent-training-data.git
 # Install dependencies
 pip install -r requirements.txt
 
-# Run data generation example
-python src/examples/generate_data.py
-
-# Process the generated data
-python src/examples/process_data.py
-```
+# Run data generation and data process
+python src/examples/generate_data.py --model Qwen/Qwen2.5-7B-Instruct --domain finance --size 100
 
 ## Documentation
 

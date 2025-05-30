@@ -6,6 +6,10 @@ import os
 import argparse
 import json
 from datetime import datetime
+import sys
+
+# Add project root to Python path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 from src.data_generation.generator import DataGenerator
 from src.data_processing.processor import DataProcessor
@@ -18,9 +22,11 @@ def main():
     """Main function to generate and process a dataset."""
     # Parse command line arguments
     parser = argparse.ArgumentParser(description="Generate training dataset for a specific domain")
-    parser.add_argument("--domain", type=str, default="finance", help="Domain to generate data for")
+    parser.add_argument("--domain", type=str, default="finance", 
+                       choices=["finance", "healthcare", "legal", "tech", "general"],
+                       help="Domain to generate data for")
     parser.add_argument("--size", type=int, default=100, help="Number of examples to generate")
-    parser.add_argument("--model", type=str, default="Qwen/Qwen1.5-7B-Chat", help="Model to use for generation")
+    parser.add_argument("--model", type=str, default="Qwen/Qwen2.5-7B-Instruct", help="Model to use for generation")
     parser.add_argument("--output", type=str, default=None, help="Output file path")
     parser.add_argument("--config", type=str, default=None, help="Configuration file path")
     parser.add_argument("--augment", action="store_true", help="Whether to augment the dataset")

@@ -1,0 +1,1137 @@
+[
+  {
+    "id": "dfba7a6d-feff-4ea3-b7ce-e482814daef8",
+    "created_at": "2025-05-30T11:04:54.757567",
+    "domain": "healthcare",
+    "input": "How should healthcare providers approach follow-up care for patients with respiratory conditions?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 2,
+      "parameters": {
+        "procedure": "follow-up care",
+        "condition": "respiratory conditions"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.757587",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.807600",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.807737",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.808133",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.809883",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "b17ac8a6-44e8-42a7-b5cd-dd0711c17753",
+    "created_at": "2025-05-30T11:04:54.758351",
+    "domain": "healthcare",
+    "input": "How should healthcare providers approach treatment planning for patients with respiratory conditions?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 2,
+      "parameters": {
+        "procedure": "treatment planning",
+        "condition": "respiratory conditions"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.758364",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.810088",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.810179",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.810315",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.810480",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "3c6ecd3d-266b-45bc-82c0-278b63145ffa",
+    "created_at": "2025-05-30T11:04:54.759069",
+    "domain": "healthcare",
+    "input": "How should healthcare providers approach screening for patients with autoimmune disorders?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 2,
+      "parameters": {
+        "procedure": "screening",
+        "condition": "autoimmune disorders"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.759080",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.810647",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.810733",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.810857",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.811016",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "980b30f6-a35a-408e-97f5-8faa0293c960",
+    "created_at": "2025-05-30T11:04:54.760008",
+    "domain": "healthcare",
+    "input": "What advice would you give to young adults regarding preventive care considering their diabetes?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 1,
+      "parameters": {
+        "patient_type": "young adults",
+        "health_concern": "preventive care",
+        "patient_condition": "diabetes"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.760020",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.811189",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.811278",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.811403",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.811562",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "b03658b1-b911-44e5-b841-a98cf4845dce",
+    "created_at": "2025-05-30T11:04:54.760602",
+    "domain": "healthcare",
+    "input": "How should healthcare providers approach diagnosis for patients with autoimmune disorders?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 2,
+      "parameters": {
+        "procedure": "diagnosis",
+        "condition": "autoimmune disorders"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.760612",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.811726",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.811810",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.811950",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.812106",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "94ba3daa-c88e-4330-a564-4c54ae836172",
+    "created_at": "2025-05-30T11:04:54.761515",
+    "domain": "healthcare",
+    "input": "What are best practices for primary care physicians when dealing with patient education in outpatient clinics?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 3,
+      "parameters": {
+        "healthcare_role": "primary care physicians",
+        "scenario": "patient education",
+        "setting": "outpatient clinics"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.761525",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.812280",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.812365",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.812488",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.812650",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "bcda9a0e-5a5b-4b92-90a9-29fd9e80a8a7",
+    "created_at": "2025-05-30T11:04:54.762262",
+    "domain": "healthcare",
+    "input": "What advice would you give to children regarding chronic disease management considering their hypertension?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 1,
+      "parameters": {
+        "patient_type": "children",
+        "health_concern": "chronic disease management",
+        "patient_condition": "hypertension"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.762274",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.812824",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.812910",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.813034",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.813199",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "ee7e6295-42ad-4610-9dcc-d68eb059bfe6",
+    "created_at": "2025-05-30T11:04:54.762769",
+    "domain": "healthcare",
+    "input": "What advice would you give to children regarding preventive care considering their hypertension?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 1,
+      "parameters": {
+        "patient_type": "children",
+        "health_concern": "preventive care",
+        "patient_condition": "hypertension"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.762779",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.813368",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.813454",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.813576",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.813740",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "cb23e94b-0b74-46e7-85ae-65aec5c604df",
+    "created_at": "2025-05-30T11:04:54.763238",
+    "domain": "healthcare",
+    "input": "How should healthcare providers approach follow-up care for patients with respiratory conditions?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 2,
+      "parameters": {
+        "procedure": "follow-up care",
+        "condition": "respiratory conditions"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.763248",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.813901",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.813985",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.814106",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.814265",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "3cdc4e6d-9c50-4e80-99dc-34963058c558",
+    "created_at": "2025-05-30T11:04:54.763914",
+    "domain": "healthcare",
+    "input": "What are best practices for nurses when dealing with emergency situations in hospitals?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 3,
+      "parameters": {
+        "healthcare_role": "nurses",
+        "scenario": "emergency situations",
+        "setting": "hospitals"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.763925",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.814438",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.814526",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.814651",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.814808",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "4dab80b1-c2ea-4037-a209-6cb30be22cd2",
+    "created_at": "2025-05-30T11:04:54.764628",
+    "domain": "healthcare",
+    "input": "What advice would you give to pregnant women regarding chronic disease management considering their obesity?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 1,
+      "parameters": {
+        "patient_type": "pregnant women",
+        "health_concern": "chronic disease management",
+        "patient_condition": "obesity"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.764634",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.814982",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.815067",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.815189",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.815346",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "9e367d9d-ef09-4e20-b6b2-32c5a9da8a18",
+    "created_at": "2025-05-30T11:04:54.764939",
+    "domain": "healthcare",
+    "input": "What are best practices for nurses when dealing with patient education in home care?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 3,
+      "parameters": {
+        "healthcare_role": "nurses",
+        "scenario": "patient education",
+        "setting": "home care"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.764945",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.815511",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.815599",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.815721",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.815956",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "ba0c8427-317f-4352-898b-7cc1f90e77df",
+    "created_at": "2025-05-30T11:04:54.765265",
+    "domain": "healthcare",
+    "input": "What advice would you give to young adults regarding medication adherence considering their hypertension?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 1,
+      "parameters": {
+        "patient_type": "young adults",
+        "health_concern": "medication adherence",
+        "patient_condition": "hypertension"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.765270",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.816194",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.816280",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.816403",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.816475",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "8206f904-62b9-49a6-9f2e-4a8db98bb580",
+    "created_at": "2025-05-30T11:04:54.765586",
+    "domain": "healthcare",
+    "input": "What advice would you give to young adults regarding preventive care considering their limited mobility?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 1,
+      "parameters": {
+        "patient_type": "young adults",
+        "health_concern": "preventive care",
+        "patient_condition": "limited mobility"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.765592",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.816534",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.816562",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.816605",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.816660",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "06c665a4-94be-4486-b939-d162e9e26580",
+    "created_at": "2025-05-30T11:04:54.766003",
+    "domain": "healthcare",
+    "input": "What are best practices for specialists when dealing with telehealth consultations in long-term care facilities?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 3,
+      "parameters": {
+        "healthcare_role": "specialists",
+        "scenario": "telehealth consultations",
+        "setting": "long-term care facilities"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.766009",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.816719",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.816749",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.816790",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.816844",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "9ea2486d-2d42-4c72-be93-fc5be3d11b2c",
+    "created_at": "2025-05-30T11:04:54.766299",
+    "domain": "healthcare",
+    "input": "What advice would you give to elderly patients regarding chronic disease management considering their obesity?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 1,
+      "parameters": {
+        "patient_type": "elderly patients",
+        "health_concern": "chronic disease management",
+        "patient_condition": "obesity"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.766304",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.816904",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.816934",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.816976",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.817031",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "a0676b2c-e655-45ee-9b52-6b777fe06270",
+    "created_at": "2025-05-30T11:04:54.766582",
+    "domain": "healthcare",
+    "input": "What advice would you give to elderly patients regarding nutrition considering their diabetes?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 1,
+      "parameters": {
+        "patient_type": "elderly patients",
+        "health_concern": "nutrition",
+        "patient_condition": "diabetes"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.766588",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.817089",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.817118",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.817161",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.817214",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "7c0aef05-fa8b-4c24-b2ec-3b22e153c82e",
+    "created_at": "2025-05-30T11:04:54.766881",
+    "domain": "healthcare",
+    "input": "What are best practices for primary care physicians when dealing with preventive care visits in hospitals?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 3,
+      "parameters": {
+        "healthcare_role": "primary care physicians",
+        "scenario": "preventive care visits",
+        "setting": "hospitals"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.766887",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.817274",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.817303",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.817346",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.817399",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "c83b529e-99f7-40c9-90a8-7707c0099fac",
+    "created_at": "2025-05-30T11:04:54.767139",
+    "domain": "healthcare",
+    "input": "What are best practices for specialists when dealing with emergency situations in outpatient clinics?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 3,
+      "parameters": {
+        "healthcare_role": "specialists",
+        "scenario": "emergency situations",
+        "setting": "outpatient clinics"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.767144",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.817458",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.817488",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.817530",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.817584",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "dde097f1-7f07-43cf-9c04-d4dfa16e4f5f",
+    "created_at": "2025-05-30T11:04:54.767379",
+    "domain": "healthcare",
+    "input": "What are best practices for specialists when dealing with telehealth consultations in hospitals?",
+    "response": "Error generating response: 'DataGenerator' object has no attribute 'device'",
+    "metadata": {
+      "generation_method": "template_based",
+      "generator_version": "1.0",
+      "model_used": "Qwen/Qwen2.5-7B-Instruct",
+      "template_id": 3,
+      "parameters": {
+        "healthcare_role": "specialists",
+        "scenario": "telehealth consultations",
+        "setting": "hospitals"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "quality_score": 0.75
+    },
+    "trace": {
+      "parent_id": null,
+      "processing_steps": [
+        {
+          "name": "initial_generation",
+          "timestamp": "2025-05-30T11:04:54.767384",
+          "params": {}
+        },
+        {
+          "name": "clean_text",
+          "timestamp": "2025-05-30T11:04:54.817643",
+          "params": {}
+        },
+        {
+          "name": "validate_content",
+          "timestamp": "2025-05-30T11:04:54.817672",
+          "params": {}
+        },
+        {
+          "name": "add_quality_score",
+          "timestamp": "2025-05-30T11:04:54.817713",
+          "params": {
+            "score": 0.75
+          }
+        },
+        {
+          "name": "tag_entities",
+          "timestamp": "2025-05-30T11:04:54.817767",
+          "params": {
+            "entity_count": 0
+          }
+        }
+      ]
+    }
+  }
+]

@@ -16,7 +16,7 @@ logger = setup_logger("data_generator")
 class DataGenerator:
     """Main class for generating training data pairs."""
     
-    def __init__(self, model_name: str = "Qwen/Qwen1.5-7B-Chat", config_path: Optional[str] = None):
+    def __init__(self, model_name: str = "Qwen/Qwen2.5-7B-Instruct", config_path: Optional[str] = None):
         """
         Initialize the data generator with a specific model.
         
@@ -24,20 +24,51 @@ class DataGenerator:
             model_name: Name of the model to use for generation
             config_path: Path to configuration file
         """
-        self.config = load_config(config_path) if config_path else {}
         self.model_name = model_name
-        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        self.config_path = config_path
         
-        logger.info(f"Initializing DataGenerator with model {model_name} on {self.device}")
+        # Load configuration if provided
+        self.config = self._load_config(config_path) if config_path else {}
         
-        # Load tokenizer and model
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
-        self.model = AutoModelForCausalLM.from_pretrained(
-            model_name,
-            device_map="auto",
-            trust_remote_code=True,
-            torch_dtype=torch.float16
-        )
+        # Detect if using a VL (Vision-Language) model
+        is_vl_model = "vl" in model_name.lower() or "vision" in model_name.lower()
+        
+        # Load the appropriate model based on type
+        try:
+            if is_vl_model:
+                from transformers import AutoModelForVision2Seq, AutoProcessor
+                self.tokenizer = AutoProcessor.from_pretrained(model_name)
+                self.model = AutoModelForVision2Seq.from_pretrained(
+                    model_name,
+                    device_map="auto",
+                    **self.config.get("model_params", {})
+                )
+            else:
+                from transformers import AutoModelForCausalLM, AutoTokenizer
+                self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+                self.model = AutoModelForCausalLM.from_pretrained(
+                    model_name,
+                    device_map="auto",
+                    **self.config.get("model_params", {})
+                )
+            logger.info(f"Successfully loaded model: {model_name}")
+        except Exception as e:
+            logger.error(f"Error loading model: {e}")
+            logger.info("Attempting to load a compatible model variant...")
+            
+            # If Qwen2.5 VL fails, try falling back to Qwen2
+            if "qwen2.5" in model_name.lower() and "vl" in model_name.lower():
+                fallback_model = model_name.replace("2.5-vl", "2").replace("2.5_vl", "2")
+                logger.info(f"Falling back to: {fallback_model}")
+                
+                from transformers import AutoModelForCausalLM, AutoTokenizer
+                self.tokenizer = AutoTokenizer.from_pretrained(fallback_model)
+                self.model = AutoModelForCausalLM.from_pretrained(
+                    fallback_model,
+                    device_map="auto",
+                    **self.config.get("model_params", {})
+                )
+                logger.info(f"Successfully loaded fallback model: {fallback_model}")
         
         # Load domain-specific templates and rules
         self.templates = self._load_templates()
@@ -62,6 +93,32 @@ class DataGenerator:
                             "client_type": ["individual investor", "small business", "retiree"],
                             "action": ["invest", "save", "plan for retirement"],
                             "situation": ["market volatility", "low interest rates", "economic uncertainty"]
+                        }
+                    },
+                    {
+                        "domain": "healthcare",
+                        "template": "What advice would you give to {patient_type} regarding {health_concern} considering their {patient_condition}?",
+                        "parameters": {
+                            "patient_type": ["elderly patients", "young adults", "children", "pregnant women"],
+                            "health_concern": ["preventive care", "chronic disease management", "medication adherence", "nutrition"],
+                            "patient_condition": ["diabetes", "hypertension", "obesity", "limited mobility"]
+                        }
+                    },
+                    {
+                        "domain": "healthcare",
+                        "template": "How should healthcare providers approach {procedure} for patients with {condition}?",
+                        "parameters": {
+                            "procedure": ["screening", "diagnosis", "treatment planning", "follow-up care"],
+                            "condition": ["chronic heart disease", "autoimmune disorders", "mental health issues", "respiratory conditions"]
+                        }
+                    },
+                    {
+                        "domain": "healthcare",
+                        "template": "What are best practices for {healthcare_role} when dealing with {scenario} in {setting}?",
+                        "parameters": {
+                            "healthcare_role": ["nurses", "primary care physicians", "specialists", "caregivers"],
+                            "scenario": ["emergency situations", "preventive care visits", "telehealth consultations", "patient education"],
+                            "setting": ["hospitals", "outpatient clinics", "long-term care facilities", "home care"]
                         }
                     }
                 ]
