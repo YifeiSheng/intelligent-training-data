@@ -1,0 +1,74 @@
+{
+  "finance": {
+    "required_entities": [
+      "monetary_value",
+      "financial_instrument",
+      "risk_assessment"
+    ],
+    "prohibited_content": [
+      "exact_predictions",
+      "guaranteed_returns",
+      "specific investment recommendations"
+    ],
+    "language_tone": "professional",
+    "compliance_notes": [
+      "Must include risk disclaimers",
+      "Avoid language suggesting certainty of outcomes",
+      "Should be educational rather than advisory"
+    ]
+  },
+  "healthcare": {
+    "required_entities": [
+      "medical_condition",
+      "treatment_options",
+      "patient_considerations"
+    ],
+    "prohibited_content": [
+      "specific medical advice",
+      "diagnostic conclusions",
+      "medication dosages"
+    ],
+    "language_tone": "empathetic but informative",
+    "compliance_notes": [
+      "Include general disclaimer about consulting healthcare providers",
+      "Focus on educational content rather than specific medical advice",
+      "Be sensitive to patient privacy concerns"
+    ]
+  },
+  "technology": {
+    "required_entities": [
+      "technical_components",
+      "implementation_considerations",
+      "success_metrics"
+    ],
+    "prohibited_content": [
+      "proprietary information",
+      "security vulnerabilities",
+      "unverified claims"
+    ],
+    "language_tone": "clear and precise",
+    "compliance_notes": [
+      "Acknowledge potential limitations of technologies",
+      "Maintain vendor neutrality when possible",
+      "Include security and privacy considerations"
+    ]
+  },
+  "education": {
+    "required_entities": [
+      "learning_objectives",
+      "instructional_methods",
+      "assessment_approaches"
+    ],
+    "prohibited_content": [
+      "stereotyping students",
+      "outdated pedagogical practices",
+      "privacy-violating examples"
+    ],
+    "language_tone": "supportive and inclusive",
+    "compliance_notes": [
+      "Consider diverse learning needs and cultural backgrounds",
+      "Focus on evidence-based educational practices",
+      "Maintain student confidentiality in examples"
+    ]
+  }
+}

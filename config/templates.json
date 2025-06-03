@@ -1,0 +1,184 @@
+[
+  {
+    "domain": "finance",
+    "template": "As a financial advisor, how would you recommend {client_type} to {action} given {situation}?",
+    "parameters": {
+      "client_type": [
+        "individual investor",
+        "small business",
+        "retiree"
+      ],
+      "action": [
+        "invest",
+        "save",
+        "plan for retirement"
+      ],
+      "situation": [
+        "market volatility",
+        "low interest rates",
+        "economic uncertainty"
+      ]
+    }
+  },
+  {
+    "domain": "finance",
+    "template": "What are the key considerations for {client_type} when planning for {financial_goal} in a {market_condition} environment?",
+    "parameters": {
+      "client_type": [
+        "high-net-worth individuals",
+        "middle-income families",
+        "young professionals"
+      ],
+      "financial_goal": [
+        "retirement",
+        "education funding",
+        "wealth preservation",
+        "estate planning"
+      ],
+      "market_condition": [
+        "high-inflation",
+        "recession",
+        "economic growth",
+        "bear market"
+      ]
+    }
+  },
+  {
+    "domain": "finance",
+    "template": "How should {entity_type} approach {financial_activity} to optimize {objective}?",
+    "parameters": {
+      "entity_type": [
+        "banks",
+        "insurance companies",
+        "investment firms",
+        "individual traders"
+      ],
+      "financial_activity": [
+        "risk management",
+        "portfolio diversification",
+        "capital allocation",
+        "regulatory compliance"
+      ],
+      "objective": [
+        "profitability",
+        "customer satisfaction",
+        "market share",
+        "long-term growth"
+      ]
+    }
+  },
+  {
+    "domain": "healthcare",
+    "template": "What advice would you give to {patient_type} regarding {health_concern} considering their {patient_condition}?",
+    "parameters": {
+      "patient_type": [
+        "elderly patients",
+        "young adults",
+        "children",
+        "pregnant women"
+      ],
+      "health_concern": [
+        "preventive care",
+        "chronic disease management",
+        "medication adherence",
+        "nutrition"
+      ],
+      "patient_condition": [
+        "diabetes",
+        "hypertension",
+        "obesity",
+        "limited mobility"
+      ]
+    }
+  },
+  {
+    "domain": "healthcare",
+    "template": "How should healthcare providers approach {procedure} for patients with {condition}?",
+    "parameters": {
+      "procedure": [
+        "screening",
+        "diagnosis",
+        "treatment planning",
+        "follow-up care"
+      ],
+      "condition": [
+        "chronic heart disease",
+        "autoimmune disorders",
+        "mental health issues",
+        "respiratory conditions"
+      ]
+    }
+  },
+  {
+    "domain": "healthcare",
+    "template": "What are best practices for {healthcare_role} when dealing with {scenario} in {setting}?",
+    "parameters": {
+      "healthcare_role": [
+        "nurses",
+        "primary care physicians",
+        "specialists",
+        "caregivers"
+      ],
+      "scenario": [
+        "emergency situations",
+        "preventive care visits",
+        "telehealth consultations",
+        "patient education"
+      ],
+      "setting": [
+        "hospitals",
+        "outpatient clinics",
+        "long-term care facilities",
+        "home care"
+      ]
+    }
+  },
+  {
+    "domain": "technology",
+    "template": "How can {organization_type} implement {technology} to improve {business_aspect}?",
+    "parameters": {
+      "organization_type": [
+        "startups",
+        "enterprise companies",
+        "government agencies",
+        "educational institutions"
+      ],
+      "technology": [
+        "artificial intelligence",
+        "blockchain",
+        "cloud computing",
+        "Internet of Things"
+      ],
+      "business_aspect": [
+        "operational efficiency",
+        "customer experience",
+        "data security",
+        "innovation"
+      ]
+    }
+  },
+  {
+    "domain": "education",
+    "template": "What strategies can {educator_type} use to enhance {learning_aspect} for students with {student_characteristic}?",
+    "parameters": {
+      "educator_type": [
+        "elementary teachers",
+        "high school faculty",
+        "university professors",
+        "special education instructors"
+      ],
+      "learning_aspect": [
+        "critical thinking",
+        "information retention",
+        "practical application",
+        "collaborative skills"
+      ],
+      "student_characteristic": [
+        "learning disabilities",
+        "advanced capabilities",
+        "ESL backgrounds",
+        "diverse cultural backgrounds"
+      ]
+    }
+  }
+]

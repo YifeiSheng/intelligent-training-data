@@ -33,6 +33,10 @@ class DataGenerator:
         # Detect if using a VL (Vision-Language) model
         is_vl_model = "vl" in model_name.lower() or "vision" in model_name.lower()
         
+        # Set the device for computation
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        logger.info(f"Using device: {self.device}")
+        
         # Load the appropriate model based on type
         try:
             if is_vl_model:
@@ -76,16 +80,48 @@ class DataGenerator:
         
         logger.info(f"Loaded {len(self.templates)} templates and {len(self.domain_rules)} domain rules")
     
+    def _load_config(self, config_path: Optional[str]) -> Dict[str, Any]:
+        """Load configuration from file."""
+        if not config_path:
+            return {}
+            
+        try:
+            return load_config(config_path)
+        except Exception as e:
+            logger.error(f"Error loading config from {config_path}: {e}")
+            return {}
+
     def _load_templates(self) -> List[Dict[str, Any]]:
         """Load templates from configuration."""
+        # Get template path from config or use default
         template_path = self.config.get("template_path", "config/templates.json")
+        
+        # Handle both absolute and relative paths
+        if not os.path.isabs(template_path):
+            # Try relative to current working directory
+            cwd_path = os.path.join(os.getcwd(), template_path)
+            # Try relative to script directory
+            script_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+            script_path = os.path.join(script_dir, template_path)
+            
+            if os.path.exists(cwd_path):
+                template_path = cwd_path
+            elif os.path.exists(script_path):
+                template_path = script_path
+        
         try:
             if os.path.exists(template_path):
                 with open(template_path, 'r') as f:
+                    logger.info(f"Loaded templates from {template_path}")
                     return json.load(f)
             else:
                 logger.warning(f"Template file {template_path} not found. Using default templates.")
-                return [
+                # Create directory for templates if it doesn't exist
+                default_dir = os.path.join(os.getcwd(), "config")
+                os.makedirs(default_dir, exist_ok=True)
+                
+                # Use default templates
+                default_templates = [
                     {
                         "domain": "finance",
                         "template": "As a financial advisor, how would you recommend {client_type} to {action} given {situation}?",
@@ -122,25 +158,68 @@ class DataGenerator:
                         }
                     }
                 ]
+                
+                # Write default templates to file for future use
+                default_path = os.path.join(default_dir, "templates.json")
+                try:
+                    with open(default_path, 'w') as f:
+                        json.dump(default_templates, f, indent=2)
+                    logger.info(f"Created default templates file at {default_path}")
+                except Exception as e:
+                    logger.warning(f"Could not create default templates file: {e}")
+                
+                return default_templates
         except Exception as e:
             logger.error(f"Error loading templates: {e}")
             return []
     
     def _load_domain_rules(self) -> Dict[str, Any]:
         """Load domain-specific rules."""
+        # Get rules path from config or use default
         rules_path = self.config.get("rules_path", "config/domain_rules.json")
+        
+        # Handle both absolute and relative paths
+        if not os.path.isabs(rules_path):
+            # Try relative to current working directory
+            cwd_path = os.path.join(os.getcwd(), rules_path)
+            # Try relative to script directory
+            script_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+            script_path = os.path.join(script_dir, rules_path)
+            
+            if os.path.exists(cwd_path):
+                rules_path = cwd_path
+            elif os.path.exists(script_path):
+                rules_path = script_path
+        
         try:
             if os.path.exists(rules_path):
                 with open(rules_path, 'r') as f:
+                    logger.info(f"Loaded domain rules from {rules_path}")
                     return json.load(f)
             else:
                 logger.warning(f"Domain rules file {rules_path} not found. Using default rules.")
-                return {
+                # Create directory for rules if it doesn't exist
+                default_dir = os.path.join(os.getcwd(), "config")
+                os.makedirs(default_dir, exist_ok=True)
+                
+                # Use default rules
+                default_rules = {
                     "finance": {
                         "required_entities": ["monetary_value", "financial_instrument"],
                         "prohibited_content": ["exact_predictions", "guaranteed_returns"]
                     }
                 }
+                
+                # Write default rules to file for future use
+                default_path = os.path.join(default_dir, "domain_rules.json")
+                try:
+                    with open(default_path, 'w') as f:
+                        json.dump(default_rules, f, indent=2)
+                    logger.info(f"Created default domain rules file at {default_path}")
+                except Exception as e:
+                    logger.warning(f"Could not create default domain rules file: {e}")
+                
+                return default_rules
         except Exception as e:
             logger.error(f"Error loading domain rules: {e}")
             return {}
@@ -197,10 +276,11 @@ class DataGenerator:
             # Format prompt for the model
             model_prompt = f"<|im_start|>user\n{prompt}<|im_end|>\n<|im_start|>assistant\n"
             
-            # Generate response
-            inputs = self.tokenizer(model_prompt, return_tensors="pt").to(self.device)
+            # Generate response - explicitly set padding and attention mask
+            inputs = self.tokenizer(model_prompt, return_tensors="pt", padding=True).to(self.device)
             generated_ids = self.model.generate(
                 inputs.input_ids,
+                attention_mask=inputs.attention_mask,
                 max_new_tokens=512,
                 do_sample=True,
                 temperature=0.7,
